@@ -81,17 +81,17 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px
+  font-size: 14px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -101,22 +101,22 @@ heading {
 
 .service-subrole {
   margin: 4px 0 0 20px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .service-subrole a {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .one {
