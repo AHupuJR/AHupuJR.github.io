@@ -205,7 +205,7 @@
     'Research Scientist': 'Research Scientist',
     'Post-doc researcher': '博士后研究员',
     'Visiting doctoral student': '访问博士生',
-    'Robotics and Perception Group': 'RPG',
+    'Robotics and Perception Group': 'Robotics and Perception Group',
     'University of Zurich': '苏黎世大学',
     'ETH Zurich': '苏黎世联邦理工学院',
     'Computer Vision Lab': '计算机视觉实验室',
