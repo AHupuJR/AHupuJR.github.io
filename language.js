@@ -28,10 +28,10 @@
   document.body.classList.add('lang-zh');
 
   const translations = new Map(Object.entries({
-    'Research Scientist@': '研究科学家 @',
+    'Research Scientist@': 'Research Scientist @',
     ', adviced by Prof.': '，合作导师为',
     'and Dr. Danda Pani Paudel.': '教授与 Danda Pani Paudel 博士。',
-    'I earned my Ph.D. from Zhejiang University, privileged to be supervised by the best professor in the world——my life-long mentor and role model, Prof.': '我在浙江大学获得博士学位，有幸师从我心目中最好的老师——我终身的导师与榜样',
+    'I earned my Ph.D. from Zhejiang University, privileged to be supervised by the best professor in the world——my life-long mentor and role model, Prof.': '我在浙江大学获得博士学位，有幸师从我心目中最好的老师',
     'I also had the privilege to be supervised by Prof.': '我还曾有幸在',
     'at the': '教授指导下，于',
     ', University of Zurich, and Prof.': '（苏黎世大学）开展研究，并在',
@@ -39,7 +39,7 @@
     'from UC Merced and Google DeepMind.': '教授（加州大学默塞德分校 / Google DeepMind）保持紧密合作。',
     "I'm interested in": '我的研究兴趣包括',
     'world models': '世界模型',
-    'AI for optics': '光学人工智能',
+    'AI for optics': 'AI4Optics',
     'and': '和',
     ', and': '，以及',
     ', the': '、',
@@ -47,7 +47,7 @@
     '&': '与',
     '.': '。',
     '!': '！',
-    'event-based vision': '事件视觉',
+    'event-based vision': 'Event-based Vision',
     'I am always open to collaborate. Drop me a email if you are interested!': '欢迎任何形式的学术合作，感兴趣的话请随时邮件联系我！',
     'Email': '邮箱',
     'Google Scholar': '谷歌学术',
@@ -128,8 +128,8 @@
     'codes coming soon': '代码即将发布',
     '(Highlight)': '（Highlight）',
     "(Editors' Pick)": '（编辑精选）',
-    '(Oral Presentation, rate:2.7%)': '（口头报告，录取率 2.7%）',
-    '(Oral Presentation)': '（口头报告）',
+    '(Oral Presentation, rate:2.7%)': '(Oral Presentation, rate: 2.7%)',
+    '(Oral Presentation)': '(Oral Presentation)',
     ', 2026': '，2026',
     ', 2025': '，2025',
     ', 2024': '，2024',
@@ -181,13 +181,13 @@
     'CVPR 2025 New Trends in Image Restoration and Enhancement (NTIRE) workshop': 'CVPR 2025 图像复原与增强新趋势（NTIRE）研讨会',
     'in CVPR 2025': '，隶属于 CVPR 2025',
     'NTIRE workshop': 'NTIRE 研讨会',
-    'Event-Based Vision workshop': '事件视觉研讨会',
+    'Event-Based Vision workshop': 'Event-Based Vision workshop',
     'Area Chair for ICML 2026, NeurIPS 2026, ICLR 2027, CVPR 2027.': '担任 ICML 2026、NeurIPS 2026、ICLR 2027 与 CVPR 2027 领域主席。',
     'Reviewer for CVPR, ICCV, ECCV, AAAI, WACV, IJCV, TPAMI, TIP, RA-L, CVIU.': '担任 CVPR、ICCV、ECCV、AAAI、WACV、IJCV、TPAMI、TIP、RA-L、CVIU 审稿人。',
 
     'Honors & Awards': '荣誉与奖励',
     'Huawei Early Career Scholar Fund (华为AI青年学者基金)': '华为 AI 青年学者基金',
-    'ECCV Oral Presentation (rate: 2.7%):': 'ECCV 口头报告（录取率 2.7%）：',
+    'ECCV Oral Presentation (rate: 2.7%):': 'ECCV Oral Presentation (rate: 2.7%):',
     'CVPR Highlight:': 'CVPR Highlight：',
     "Editors' Pick in Optics Express X2": 'Optics Express 编辑精选 ×2',
 
@@ -202,10 +202,10 @@
     'Invited talk @': '邀请报告 @',
 
     'Experience': '工作经历',
-    'Research Scientist': '研究科学家',
+    'Research Scientist': 'Research Scientist',
     'Post-doc researcher': '博士后研究员',
     'Visiting doctoral student': '访问博士生',
-    'Robotics and Perception Group': '机器人与感知研究组',
+    'Robotics and Perception Group': 'RPG',
     'University of Zurich': '苏黎世大学',
     'ETH Zurich': '苏黎世联邦理工学院',
     'Computer Vision Lab': '计算机视觉实验室',
@@ -255,6 +255,10 @@
     const leading = node.nodeValue.match(/^\s*/)[0];
     const trailing = node.nodeValue.match(/\s*$/)[0];
     node.nodeValue = leading + translated + trailing;
+  });
+
+  document.querySelectorAll('[data-zh-text]').forEach((element) => {
+    element.textContent = element.dataset.zhText;
   });
 
   const profileImage = document.querySelector('img[alt="profile photo"]');
